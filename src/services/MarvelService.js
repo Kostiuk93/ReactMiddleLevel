@@ -23,6 +23,7 @@ class MarvelService {
     }
 
     _transformCaracter = (char) => {
+        
         return {
             name: char.name,
             description: char.description  ? `${char.description.slice(0, 150)}...` : `Description is missing! Sorry!`,
