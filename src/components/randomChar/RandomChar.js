@@ -18,7 +18,7 @@ class RandomChar extends Component {
 
     componentDidMount() {
         this.updateChar()
-        this.timerId = setInterval(this.updateChar, 5000)
+        // this.timerId = setInterval(this.updateChar, 5000)
     }
 
     componentWillUnmount() {
@@ -101,8 +101,10 @@ const View = ({char}) => {
             <div className="randomchar__info">
                 <p className="randomchar__name">{name}</p>
                 <p className="randomchar__descr">
-                    {description}
+                {/*Если колличество символов больше 150, то в конце строки ставится ... Если описания нет, то сообщение */}
+                {char.description  ? `${char.description.slice(0, 150)}...` : `Description is missing! Sorry!`}
                 </p>
+
                 <div className="randomchar__btns">
                     <a href={homepage} className="button button__main">
                         <div className="inner">homepage</div>
