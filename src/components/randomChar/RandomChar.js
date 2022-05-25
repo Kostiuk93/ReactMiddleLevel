@@ -1,5 +1,5 @@
-import { Component } from 'react/cjs/react.production.min';
-import Spinner from '../spinner/spinner';
+import { Component } from 'react';
+import Spinner from '../spinner/Spinner';
 import ErrorMessage from '../errorMessage/ErrorMessage';
 import MarvelService from '../../services/MarvelService';
 
