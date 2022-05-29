@@ -12,7 +12,6 @@ const useMarvelService = () => {
     //Alex93
     const _apiBase = 'https://gateway.marvel.com:443/v1/public/';
     const _apiKey = 'apikey=2a5a4367491be5b1b90e0fe3a2d81b01';
-    const _apiKeyComics = 'https://gateway.marvel.com:443/v1/public/comics?offset=210&apikey=2a5a4367491be5b1b90e0fe3a2d81b01'
     const _baseOffset = 210;
 
     const getAllCharacters = async (offset = _baseOffset) => {
